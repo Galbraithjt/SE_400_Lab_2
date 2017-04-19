@@ -3,9 +3,14 @@
  */
 public class Accelerometer extends SpeedSensor
 {
-    private double speed = 0;
-    public double getSpeed()
+    private double acceleration = 0;
+    @Override
+    public void powerOn()
     {
-        return speed;
+        getSpeed();
+    }
+    public double getAcceleration()
+    {
+        return acceleration;
     }
 }

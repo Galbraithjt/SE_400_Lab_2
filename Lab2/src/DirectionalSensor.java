@@ -4,6 +4,11 @@
 public class DirectionalSensor extends VelocitySensor
 {
     private int direction = 0;
+    @Override
+    public void powerOn()
+    {
+        getDirection();
+    }
 
     public int getDirection()
     {

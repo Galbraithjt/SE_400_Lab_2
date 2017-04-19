@@ -5,6 +5,12 @@ public class LocationSensor extends Sensor
 {
     private double location = 0.0;
 
+    @Override
+    public void powerOn()
+    {
+        getLocation();
+    }
+
     public double getLocation()
     {
         location = calcualteLocation();

@@ -5,6 +5,12 @@ public class Gyroscope extends SpeedSensor
 {
     private int orientation = 0;
 
+    @Override
+    public void powerOn()
+    {
+        getOrientation();
+    }
+
     public int getOrientation()
     {
         return orientation;

@@ -3,7 +3,13 @@
  */
 public class GravitationalPullSensor extends LocationSensor
 {
-    private double gravitationalConstant;
+    private double gravitationalConstant = 0;
+
+    @Override
+    public void powerOn()
+    {
+        getGravitationalConstant();
+    }
 
     public double getGravitationalConstant()
     {

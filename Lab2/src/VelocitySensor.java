@@ -5,6 +5,12 @@ public class VelocitySensor extends Sensor
 {
     private double velocity = 0;
 
+    @Override
+    public void powerOn()
+    {
+        getVelocity();
+    }
+
     public double getVelocity()
     {
         velocity = calculateVelocity();
