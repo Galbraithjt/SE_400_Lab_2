@@ -19,7 +19,7 @@ public class main
             }
             if(rnd == 2)
             {
-                sensorList[flc] = new LightSensor();
+                sensorList[flc] = new LocationSensor();
             }
         }
     }

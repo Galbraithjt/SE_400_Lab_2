@@ -4,6 +4,10 @@
 public class LocationSensor extends Sensor
 {
     private double location = 0.0;
+    public LocationSensor()
+    {
+        powerOn();
+    }
 
     @Override
     public void powerOn()

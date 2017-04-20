@@ -3,6 +3,10 @@
  */
 public class VelocitySensor extends Sensor
 {
+    public VelocitySensor()
+    {
+        powerOn();
+    }
     private double velocity = 0;
 
     @Override
